@@ -287,7 +287,7 @@ contactForm.addEventListener('submit', async (e) => {
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
-    loadSkills();
-    loadProjects();
-    // loadExperience(); // Comentado para usar contenido estático HTML
+    // loadSkills(); // Comentado - contenido estático por ahora
+    // loadProjects(); // Comentado - contenido estático por ahora
+    // loadExperience(); // Comentado - contenido estático en HTML
 });
