@@ -113,9 +113,11 @@
     <!-- About Section -->
     <section id="about" class="py-5 bg-dark-subtle">
         <div class="container">
-            <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
-                <h2 class="display-4 fw-bold mb-3">Sobre Mí</h2>
-                <p class="lead text-muted">Conoce más sobre mi trayectoria y pasión por el desarrollo</p>
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="display-4 fw-bold mb-3">Sobre Mí</h2>
+                    <p class="lead text-muted">Conoce más sobre mi trayectoria y pasión por el desarrollo</p>
+                </div>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
@@ -123,21 +125,18 @@
                         <h3 class="mb-4">Mi Historia</h3>
                         <p class="mb-3">
                             Como Tecnóloga en Informática de la Corporación Universitaria Minuto de Dios y estudiante de
-                            Ingeniería en
-                            Sistemas, mi enfoque está en el desarrollo web, la gestión de bases de datos y la
-                            conectividad de sistemas.
+                            Ingeniería en Sistemas, mi enfoque está en el desarrollo web, la gestión de bases de datos y
+                            la conectividad de sistemas.
                         </p>
                         <p class="mb-3">
                             Actualmente, en DataCrédito Experian, contribuyo a la implementación de soluciones
-                            tecnológicas asegurando el
-                            correcto funcionamiento de los servicios para nuestros clientes. Me especializo en el
-                            análisis de datos,
-                            diseño de bases de datos y desarrollo backend utilizando Python y Java.
+                            tecnológicas asegurando el correcto funcionamiento de los servicios para nuestros clientes.
+                            Me especializo en el análisis de datos, diseño de bases de datos y desarrollo backend
+                            utilizando Python y Java.
                         </p>
                         <p>
                             Complementando mi perfil técnico, he realizado un curso de Gerencia de Proyectos, lo que me
-                            ha permitido
-                            fortalecer mis habilidades en planificación, ejecución y liderazgo de proyectos
+                            ha permitido fortalecer mis habilidades en planificación, ejecución y liderazgo de proyectos
                             tecnológicos.
                         </p>
                     </div>
@@ -181,20 +180,158 @@
     <!-- Skills Section -->
     <section id="skills" class="py-5">
         <div class="container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
-                        <h2 class="display-4 fw-bold mb-3">Proyectos</h2>
-                        <p class="lead text-muted">Algunos de mis trabajos recientes</p>
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="display-4 fw-bold mb-3">Habilidades</h2>
+                    <p class="lead text-muted">Tecnologías y herramientas que domino</p>
+                </div>
+            </div>
+            <div id="skillsContainer" class="row g-4">
+                <!-- Python -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="glass-card skill-card p-4">
+                        <div class="skill-icon mb-3">
+                            <i class="fab fa-python fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="mb-3">Python</h4>
+                        <p class="text-muted mb-3">Desarrollo de scripts, automatización y backend</p>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 85%"></div>
+                        </div>
                     </div>
                 </div>
-                <div id="projectsContainer" class="row g-4">
-                    <!-- Projects will be loaded dynamically or shown static -->
-                    <div class="col-12 text-center">
-                        <p class="text-muted">Sección en construcción</p>
+
+                <!-- Java -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-card skill-card p-4">
+                        <div class="skill-icon mb-3">
+                            <i class="fab fa-java fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="mb-3">Java</h4>
+                        <p class="text-muted mb-3">Programación orientada a objetos y aplicaciones empresariales</p>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SQL -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="glass-card skill-card p-4">
+                        <div class="skill-icon mb-3">
+                            <i class="fas fa-database fa-3x text-success"></i>
+                        </div>
+                        <h4 class="mb-3">SQL</h4>
+                        <p class="text-muted mb-3">Diseño de bases de datos, consultas complejas y optimización</p>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HTML & CSS -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="glass-card skill-card p-4">
+                        <div class="skill-icon mb-3">
+                            <i class="fab fa-html5 fa-3x text-warning"></i>
+                        </div>
+                        <h4 class="mb-3">HTML & CSS</h4>
+                        <p class="text-muted mb-3">Desarrollo frontend, diseño responsivo y accesibilidad</p>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-card skill-card p-4">
+                        <div class="skill-icon mb-3">
+                            <i class="fab fa-js fa-3x text-info"></i>
+                        </div>
+                        <h4 class="mb-3">JavaScript</h4>
+                        <p class="text-muted mb-3">Desarrollo de aplicaciones web interactivas y dinámicas</p>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Services -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="glass-card skill-card p-4">
+                        <div class="skill-icon mb-3">
+                            <i class="fas fa-server fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="mb-3">Web Services</h4>
+                        <p class="text-muted mb-3">SOAP/REST APIs, integración de sistemas</p>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Git & GitHub -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="glass-card skill-card p-4">
+                        <div class="skill-icon mb-3">
+                            <i class="fab fa-git-alt fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="mb-3">Git & GitHub</h4>
+                        <p class="text-muted mb-3">Control de versiones y colaboración en equipo</p>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gerencia de Proyectos -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-card skill-card p-4">
+                        <div class="skill-icon mb-3">
+                            <i class="fas fa-project-diagram fa-3x text-success"></i>
+                        </div>
+                        <h4 class="mb-3">Gerencia de Proyectos</h4>
+                        <p class="text-muted mb-3">Planificación, ejecución y seguimiento de proyectos</p>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Automatización -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="glass-card skill-card p-4">
+                        <div class="skill-icon mb-3">
+                            <i class="fas fa-cogs fa-3x text-warning"></i>
+                        </div>
+                        <h4 class="mb-3">Automatización</h4>
+                        <p class="text-muted mb-3">Scripts, procesos y monitoreo de sistemas</p>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-dark-subtle">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="display-4 fw-bold mb-3">Proyectos</h2>
+                    <p class="lead text-muted">Algunos de mis trabajos recientes</p>
+                </div>
+            </div>
+            <div id="projectsContainer" class="row g-4">
+                <!-- Projects will be loaded dynamically or shown static -->
+                <div class="col-12 text-center">
+                    <p class="text-muted">Sección en construcción</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Experience Section -->
