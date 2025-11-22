@@ -66,10 +66,30 @@ app.use((err, req, res, next) => {
     });
 });
 
-// Iniciar servidor y sincronizar base de datos
-console.log('Iniciando sincronización de base de datos...');
-db.sequelize.sync({ force: false }).then(() => {
-    console.log('✅ Base de datos sincronizada correctamente. Tablas creadas.');
+// Iniciar servidor y crear tabla manualmente
+console.log('Iniciando servidor...');
+
+const createTableQuery = `
+    CREATE TABLE IF NOT EXISTS contacts (
+        id CHAR(36) PRIMARY KEY,
+        name VARCHAR(100) NOT NULL,
+        email VARCHAR(100) NOT NULL,
+        subject VARCHAR(200) NOT NULL,
+        message TEXT NOT NULL,
+        read BOOLEAN DEFAULT 0,
+        createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+        updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP
+    );
+`;
+
+// Intentar crear la tabla manualmente antes de iniciar
+db.sequelize.query(createTableQuery).then(() => {
+    console.log('✅ Tabla contacts verificada/creada manualmente.');
+
+    // Sincronizar el resto de modelos
+    return db.sequelize.sync({ force: false });
+}).then(() => {
+    console.log('✅ Base de datos sincronizada.');
     app.listen(PORT, () => {
         console.log(`
 ╔═══════════════════════════════════════════════════════╗
@@ -87,7 +107,7 @@ db.sequelize.sync({ force: false }).then(() => {
       `);
     });
 }).catch(err => {
-    console.error('Error al sincronizar la base de datos:', err);
+    console.error('Error crítico al iniciar:', err);
 });
 
 module.exports = app;
