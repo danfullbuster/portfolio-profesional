@@ -267,18 +267,19 @@ contactForm.addEventListener('submit', async (e) => {
         if (data.success) {
             contactAlert.innerHTML = `
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    <i class="fas fa-check-circle me-2"></i>¡Mensaje enviado exitosamente! Te contactaré pronto.
+                    <i class="fas fa-check-circle me-2"></i>¡Mensaje enviado exitosamente! Te responderé pronto.
                     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                 </div>
             `;
             contactForm.reset();
         } else {
-            throw new Error(data.message);
+            throw new Error(data.error || data.message || 'Error desconocido');
         }
     } catch (error) {
+        console.error('Error:', error);
         contactAlert.innerHTML = `
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <i class="fas fa-exclamation-circle me-2"></i>Error al enviar el mensaje. Por favor intenta nuevamente.
+                <i class="fas fa-exclamation-circle me-2"></i>${error.message}
                 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
             </div>
         `;
