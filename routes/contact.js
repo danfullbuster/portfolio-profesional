@@ -37,21 +37,16 @@ router.post('/', async (req, res) => {
             });
         }
 
-        const contact = await Contact.create({
-            name,
-            email,
-            subject,
-            message,
-            read: false
-        });
+        // Enviar notificación por email DIRECTAMENTE (sin guardar en DB)
+        const emailResult = await sendContactNotification({ name, email, subject, message });
 
-        // Enviar notificación por email
-        await sendContactNotification({ name, email, subject, message });
+        if (!emailResult.success) {
+            throw new Error('Error al enviar el correo electrónico');
+        }
 
-        res.status(201).json({
+        res.status(200).json({
             success: true,
-            message: 'Mensaje enviado exitosamente',
-            data: contact
+            message: 'Mensaje enviado exitosamente'
         });
     } catch (error) {
         console.error('Error al enviar mensaje:', error);

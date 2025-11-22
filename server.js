@@ -4,8 +4,6 @@ const helmet = require('helmet');
 const path = require('path');
 require('dotenv').config();
 
-const db = require('./models'); // Importar modelos para sincronización
-
 // Importar rutas
 const authRoutes = require('./routes/auth');
 const projectRoutes = require('./routes/projects');
@@ -66,48 +64,20 @@ app.use((err, req, res, next) => {
     });
 });
 
-// Iniciar servidor y crear tabla manualmente
-console.log('Iniciando servidor...');
-
-const createTableQuery = `
-    CREATE TABLE IF NOT EXISTS contacts (
-        id CHAR(36) PRIMARY KEY,
-        name VARCHAR(100) NOT NULL,
-        email VARCHAR(100) NOT NULL,
-        subject VARCHAR(200) NOT NULL,
-        message TEXT NOT NULL,
-        read BOOLEAN DEFAULT 0,
-        createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
-        updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP
-    );
-`;
-
-// Intentar crear la tabla manualmente antes de iniciar
-db.sequelize.query(createTableQuery).then(() => {
-    console.log('✅ Tabla contacts verificada/creada manualmente.');
-
-    // Sincronizar el resto de modelos
-    return db.sequelize.sync({ force: false });
-}).then(() => {
-    console.log('✅ Base de datos sincronizada.');
-    app.listen(PORT, () => {
-        console.log(`
+// Iniciar servidor (SIN esperar a la base de datos)
+app.listen(PORT, () => {
+    console.log(`
 ╔═══════════════════════════════════════════════════════╗
 ║                                                       ║
 ║   🚀 Servidor iniciado exitosamente                  ║
 ║                                                       ║
 ║   📍 URL: http://localhost:${PORT}                      ║
 ║   🔧 Modo: ${process.env.NODE_ENV || 'development'}                       ║
-║   💾 Base de datos: ${process.env.DB_DIALECT || 'SQLite'}                            ║
 ║                                                       ║
 ║   📄 Página principal: http://localhost:${PORT}/       ║
-║   🔐 Panel admin: http://localhost:${PORT}/admin      ║
 ║                                                       ║
 ╚═══════════════════════════════════════════════════════╝
-      `);
-    });
-}).catch(err => {
-    console.error('Error crítico al iniciar:', err);
+    `);
 });
 
 module.exports = app;
