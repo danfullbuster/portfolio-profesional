@@ -254,17 +254,18 @@ contactForm.addEventListener('submit', async (e) => {
     };
 
     try {
-        const response = await fetch(`${API_URL}/contact`, {
+        const response = await fetch('https://formspree.io/f/mvgyagrg', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
             },
             body: JSON.stringify(formData)
         });
 
         const data = await response.json();
 
-        if (data.success) {
+        if (response.ok) {
             contactAlert.innerHTML = `
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                     <i class="fas fa-check-circle me-2"></i>¡Mensaje enviado exitosamente! Te responderé pronto.
@@ -273,7 +274,9 @@ contactForm.addEventListener('submit', async (e) => {
             `;
             contactForm.reset();
         } else {
-            throw new Error(data.error || data.message || 'Error desconocido');
+            // Formspree devuelve errores en data.errors
+            const errorMessage = data.error || (data.errors ? data.errors.map(e => e.message).join(', ') : 'Error desconocido');
+            throw new Error(errorMessage);
         }
     } catch (error) {
         console.error('Error:', error);
