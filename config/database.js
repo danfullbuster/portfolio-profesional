@@ -1,9 +1,15 @@
 const { Sequelize } = require('sequelize');
 require('dotenv').config();
 
+const path = require('path');
+
+const storagePath = process.env.NODE_ENV === 'production'
+  ? '/tmp/database.sqlite'
+  : './database.sqlite';
+
 const sequelize = new Sequelize({
   dialect: 'sqlite',
-  storage: './database.sqlite', // Base de datos en archivo local
+  storage: storagePath,
   logging: process.env.NODE_ENV === 'development' ? console.log : false,
   define: {
     timestamps: true,
