@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { Contact } = require('../models');
 const authMiddleware = require('../middleware/auth');
+const { sendContactNotification } = require('../config/email');
 
 // GET /api/contact - Listar mensajes de contacto (requiere autenticación)
 router.get('/', authMiddleware, async (req, res) => {
@@ -43,6 +44,9 @@ router.post('/', async (req, res) => {
             message,
             read: false
         });
+
+        // Enviar notificación por email
+        await sendContactNotification({ name, email, subject, message });
 
         res.status(201).json({
             success: true,
