@@ -4,7 +4,7 @@ const helmet = require('helmet');
 const path = require('path');
 require('dotenv').config();
 
-const { testConnection } = require('./config/database');
+const db = require('./models'); // Importar modelos para sincronización
 
 // Importar rutas
 const authRoutes = require('./routes/auth');
@@ -66,35 +66,27 @@ app.use((err, req, res, next) => {
     });
 });
 
-// Iniciar servidor
-const startServer = async () => {
-    try {
-        // Probar conexión a base de datos
-        await testConnection();
-
-        // Iniciar servidor
-        app.listen(PORT, () => {
-            console.log(`
+// Iniciar servidor y sincronizar base de datos
+db.sequelize.sync({ alter: true }).then(() => {
+    console.log('Base de datos sincronizada correctamente.');
+    app.listen(PORT, () => {
+        console.log(`
 ╔═══════════════════════════════════════════════════════╗
 ║                                                       ║
 ║   🚀 Servidor iniciado exitosamente                  ║
 ║                                                       ║
 ║   📍 URL: http://localhost:${PORT}                      ║
 ║   🔧 Modo: ${process.env.NODE_ENV || 'development'}                       ║
-║   💾 Base de datos: MySQL                            ║
+║   💾 Base de datos: ${process.env.DB_DIALECT || 'SQLite'}                            ║
 ║                                                       ║
 ║   📄 Página principal: http://localhost:${PORT}/       ║
 ║   🔐 Panel admin: http://localhost:${PORT}/admin      ║
 ║                                                       ║
 ╚═══════════════════════════════════════════════════════╝
       `);
-        });
-    } catch (error) {
-        console.error('Error al iniciar el servidor:', error);
-        process.exit(1);
-    }
-};
-
-startServer();
+    });
+}).catch(err => {
+    console.error('Error al sincronizar la base de datos:', err);
+});
 
 module.exports = app;
