@@ -1,0 +1,107 @@
+Angie DanielaBohórquez Escovar
+Dirección:Calle 4 No. 39b-20, Colombia
+Número de teléfono:321 5079122
+Dirección de e-mail:angiedanielabe@hotmail.com
+Como Tecnóloga en Informática de la Corporación Universitaria Minuto de Dios y estudiante de Ingeniería en 
+Sistemas, mi enfoque está en el desarrollo web, la gestión de bases de datos y la conectividad de sistemas. 
+Actualmente, en DataCrédito Experian, contribuyo a la implementación de soluciones tecnológicas asegurando el 
+correcto funcionamiento de los servicios para nuestros clientes.
+Me especializo en el análisis de datos, diseño de bases de datos y desarrollo backend utilizando Python y Java. 
+Además, cuento con experiencia en la gestión de bases de datos, optimización de consultas y aseguramiento de la 
+integridad de la información.
+Complementando mi perfil técnico, he realizado un curso de Gerencia de Proyectos, lo que me ha permitido 
+fortalecer mis habilidades en planificación, ejecución y liderazgo de proyectos tecnológicos. Mi enfoque está en 
+ofrecer soluciones innovadoras con una orientación a resultados, optimización del rendimiento y mejora continua 
+de la experiencia de usuario.Perfil
+Experiencia laboral
+09/2022
+Bogotá, Distrito Capital,
+ColombiaAnalista de conectividad y soporte
+DataCrédito Experian
+Ejecutar los proyectos de conectividad de clientes para el consumo de productos 
+existentes y score a la medida a través de web services.
+Brindar el soporte técnico especializado de primer nivel a los clientes para la 
+implementación del web services para activación de los diferentes productos
+Prestar el soporte técnico y funcional a los clientes ante la disponibilidad de los 
+entonos previos a los que acceden para probar los productos del portafolio de 
+Credit Services.
+Apoyar la gestión con los equipos técnicos para la implementación de nuevos 
+canales dedicados, VPNs y modificaciones a las conexiones existentes de los 
+clientes que consumen servicios del portafolio de Credit Services.
+Garantizar en su rol la satisfacción de nuestros clientes (NPS: Net Promoter Score).
+04/2022 – 02/2025
+Bogotá, ColombiaStartup Mentor
+TKambia
+Brindar asesoramiento en modelo de negocio, producto, crecimiento y 
+financiamiento.
+Ayudar en la definición y validación del Product-Market Fit.
+Conectar con inversionistas, aliados estratégicos y redes de contacto.
+Apoyar en la toma de decisiones críticas y solución de problemas.
+Motivar y desafiar a los emprendedores para maximizar su potencial.
+Brindar asesoramiento en modelo de negocio, producto, crecimiento y 
+financiamiento.
+Conectar con inversionistas, aliados estratégicos y redes de contacto. 
+Apoyar en la toma de decisiones críticas y solución de problemas.
+Motivar y desafiar a los emprendedores para maximizar su potencial.
+Aptitudes: Desarrollo web back end · Transact-SQL (T-SQL) · Inglés · Diseño de 
+ingeniería de front-end (FEED) · Ingeniería informática · Desarrollo front end · 
+Transferencia de Estado Representacional (REST) · Gestión de proyectos de programas
+de software · WordPress · HTML5 · Hojas de estilos en cascada (CSS) · PHP · SQL
+08/2020 – 04/2022
+Bogotá, Distrito Capital,
+ColombiaIngeniero de posventas
+EGC TELECOM
+Mantenimiento y actualización de aplicaciones web según los requerimientos 
+establecidos, incluyendo la actualización de formularios e imágenes, bajo la 
+Experiencia laboral
+aprobación de la Coordinadora de Operaciones.
+Soporte técnico en los diferentes aplicativos, garantizando una atención eficiente y 
+oportuna a los clientes.
+Desarrollo de nuevos aplicativos, alineados con las necesidades del negocio y los 
+clientes.Mantenimiento y actualización de aplicaciones web según los 
+requerimientos establecidos, incluyendo la actualización de formularios e imágenes,
+bajo la aprobación de la Coordinadora de Operaciones. 
+Aptitudes: Base de datos SQL · Inglés · Diseño de ingeniería de front-end (FEED) · 
+Ingeniería informática · Desarrollo front end · Transferencia de Estado 
+Representacional (REST) · Gestión de proyectos de programas de software · 
+WordPress · HTML5 · Hojas de estilos en cascada (CSS) · PHP · SQL
+10/2020 – 05/2021
+Bogotá, Distrito Capital,
+ColombiaDesarrollador web
+CAPRECOM LIQUIDADO
+Mantenimiento y optimización de aplicaciones web, incluyendo actualización de 
+formularios e imágenes, según aprobación de la Coordinación de Operaciones.
+Soporte técnico y funcional a diferentes áreas en la implementación y uso de 
+aplicaciones desarrolladas.
+Atención y resolución de consultas, dudas e inconvenientes de usuarios internos y 
+clientes.
+Diseño y ejecución de consultas SQL según las especificaciones del Líder de 
+Desarrollo.
+Diagnóstico y solución de problemas técnicos relacionados con software y 
+aplicaciones.
+Desarrollo y mantenimiento de software, aplicando mejoras y ejecutando cambios 
+según requerimientos del proyecto.
+Diseño y ejecución de consultas SQL según las especificaciones del Líder de 
+Desarrollo.
+Aptitudes: Transact-SQL (T-SQL) · Base de datos SQL · Inglés · Diseño de ingeniería de 
+front-end (FEED) · Ingeniería informática · Desarrollo front end · Transferencia de 
+Estado Representacional (REST) · Gestión de proyectos de programas de software · 
+WordPress · HTML5 · Hojas de estilos en cascada (CSS) · PHP · SQL
+01/2020 – 09/2020
+Bogotá, Distrito Capital,
+ColombiaAuxiliar de desarrollo
+Promotec corredores de seguros
+Mantenimiento y actualización de aplicaciones web, incluyendo formularios e 
+imágenes, según las solicitudes y aprobación de la Coordinadora de Operaciones.
+Diseño y ejecución de consultas SQL, siguiendo las instrucciones del Líder de 
+Desarrollo, para la optimización de bases de datos y consultas.
+Apoyo en la resolución de problemas técnicos de software, asegurando el correcto 
+funcionamiento de los sistemas y aplicaciones.
+Ejecutar cambios solicitados y realizar mantenimiento a los proyectos de software, 
+implementando mejoras continuas para mantener la calidad del servicio.
+Mantenimiento y actualización de aplicaciones web, incluyendo formularios e 
+imágenes, según las solicitudes y aprobación de la Coordinadora de Operaciones. 
+Soporte a las diferentes áreas en la implementación de los aplicativos 
+desarrollados, asegurando una correcta integración y uso. 
+Aptitudes: Inglés · Base de datos SQL · PHP · HTML · Hojas de estilos en cascada 
+(CSS)
