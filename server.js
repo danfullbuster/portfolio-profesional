@@ -67,8 +67,9 @@ app.use((err, req, res, next) => {
 });
 
 // Iniciar servidor y sincronizar base de datos
-db.sequelize.sync({ alter: true }).then(() => {
-    console.log('Base de datos sincronizada correctamente.');
+console.log('Iniciando sincronización de base de datos...');
+db.sequelize.sync({ force: false }).then(() => {
+    console.log('✅ Base de datos sincronizada correctamente. Tablas creadas.');
     app.listen(PORT, () => {
         console.log(`
 ╔═══════════════════════════════════════════════════════╗
